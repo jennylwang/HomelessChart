@@ -1,5 +1,7 @@
 This repository will contain a chart on homelessness in New York City from 2009 to 2012.  The data is from NYC Open Data. 
 
+The chart is a column chart.  My GitHub username: jennylwang. 
+
 Design: Per Donna Wong's guidelines, the baseline of the graph starts at 0, the colours for the bars are uniform (since they all measure the same variable), there are no distracting 3D figures or shades, and top numbers are not cut off.  
 
 Set font to Arial, size 12, italic and grey. 
