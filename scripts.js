@@ -1,13 +1,11 @@
 var JWFont = {
-      fontName: 'Arial',
-      fontSize: 12,
-      bold: true,
-      italic: true,
-      color: '#grey',     // The color of the text.
-      auraColor: '#grey', // The color of the text outline.
-      opacity: 0.8          // The transparency of the text.
-    }
-
+	fontName : 'Arial',
+	fontSize : 12,
+	bold : false,
+	italic : true,
+	color : 'grey', // The color of the text.	
+	opacity : 1.0 // The transparency of the text.
+}
 
 // Load the Visualization API and the piechart package.
 google.load('visualization', '1.0', {
@@ -35,15 +33,24 @@ function drawChart() {
 	}
 
 	// Set chart options
+
 	var options = {
 		'title' : 'Homelessness in New York City',
 		'width' : 800,
 		'height' : 600,
-		'hAxis':{
-			'title': 'Years'},// end of hAxis
-		'vAxis': {
-			'title': 'Total Number of Unsheltered Individuals'}// end of vAxis
+		'hAxis' : {
+			'title' : 'Years'
+		}, // end of hAxis
+		'vAxis' : {
+			'title' : 'Total Number of Unsheltered Individuals',
+			'viewWindow': {
+				min:0
+			} 
+		},// end of vAxis
+
 	};
+
+	
 	
 	options.vAxis.gridlines = myGrid;
 	options.hAxis.textStyle = JWFont;
